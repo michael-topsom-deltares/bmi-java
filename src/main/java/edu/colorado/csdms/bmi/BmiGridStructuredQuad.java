@@ -8,8 +8,8 @@ package edu.colorado.csdms.bmi;
  */
 public interface BmiGridStructuredQuad extends BmiGrid {
 
-  public void getGridShape(int gridId, int[] gridShape);
-  public void getGridX(int gridId, double[] gridX);
-  public void getGridY(int gridId, double[] gridY);
-  public void getGridZ(int gridId, double[] gridZ);
+  void getGridShape(int gridId, int[] gridShape);
+  void getGridX(int gridId, double[] gridX);
+  void getGridY(int gridId, double[] gridY);
+  void getGridZ(int gridId, double[] gridZ);
 }

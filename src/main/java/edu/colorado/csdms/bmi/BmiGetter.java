@@ -8,14 +8,19 @@ package edu.colorado.csdms.bmi;
  */ 
 public interface BmiGetter {
 
-  public void getValue(String varName, double[] dest);
-  void getValue(String varName, float[] dest);
-  public void getValue(String varName, int[] dest);
-  public void getValue(String varName, String[] dest);
+  void getValue(String varName, double[] dest);
+  default void getValue(String varName, float[] dest) {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
+  void getValue(String varName, int[] dest);
+  void getValue(String varName, String[] dest);
 
-  public <T> T getValuePtr(String varName);
+  <T> T getValuePtr(String varName);
 
-  public void getValueAtIndices(String varName, double[] dest, int[] indices);
-  public void getValueAtIndices(String varName, int[] dest, int[] indices);
-  public void getValueAtIndices(String varName, String[] dest, int[] indices);
+  void getValueAtIndices(String varName, double[] dest, int[] indices);
+  default void getValueAtIndices(String varName, float[] dest, int[] indices) {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
+  void getValueAtIndices(String varName, int[] dest, int[] indices);
+  void getValueAtIndices(String varName, String[] dest, int[] indices);
 }

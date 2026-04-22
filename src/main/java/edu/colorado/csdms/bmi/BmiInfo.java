@@ -8,9 +8,9 @@ package edu.colorado.csdms.bmi;
  */
 public interface BmiInfo {
 
-  public String getComponentName();
-  public int getInputItemCount();
-  public int getOutputItemCount();
-  public String[] getInputVarNames();
-  public String[] getOutputVarNames();
+  String getComponentName();
+  int getInputItemCount();
+  int getOutputItemCount();
+  String[] getInputVarNames();
+  String[] getOutputVarNames();
 }

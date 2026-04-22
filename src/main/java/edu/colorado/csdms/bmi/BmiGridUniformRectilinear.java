@@ -8,7 +8,7 @@ package edu.colorado.csdms.bmi;
  */
 public interface BmiGridUniformRectilinear extends BmiGrid {
 
-  public void getGridShape(int gridId, int[] gridShape);
-  public void getGridSpacing(int gridId, double[] gridSpacing);
-  public void getGridOrigin(int gridId, double[] gridOrigin);
+  void getGridShape(int gridId, int[] gridShape);
+  void getGridSpacing(int gridId, double[] gridSpacing);
+  void getGridOrigin(int gridId, double[] gridOrigin);
 }

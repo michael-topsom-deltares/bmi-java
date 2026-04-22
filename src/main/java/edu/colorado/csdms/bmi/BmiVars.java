@@ -8,10 +8,10 @@ package edu.colorado.csdms.bmi;
  */
 public interface BmiVars {
 
-  public int getVarGrid(String varName);
-  public String getVarType(String varName);
-  public String getVarUnits(String varName);
-  public int getVarItemsize(String varName);
-  public int getVarNbytes(String varName);  
-  public String getVarLocation(String varName);
+  int getVarGrid(String varName);
+  String getVarType(String varName);
+  String getVarUnits(String varName);
+  int getVarItemsize(String varName);
+  int getVarNbytes(String varName);
+  String getVarLocation(String varName);
 }

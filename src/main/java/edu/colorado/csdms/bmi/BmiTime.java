@@ -8,9 +8,9 @@ package edu.colorado.csdms.bmi;
  */
 public interface BmiTime {
 
-  public double getCurrentTime();
-  public double getStartTime();
-  public double getEndTime();
-  public String getTimeUnits();
-  public double getTimeStep();
+  double getCurrentTime();
+  double getStartTime();
+  double getEndTime();
+  String getTimeUnits();
+  double getTimeStep();
 }

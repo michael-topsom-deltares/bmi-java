@@ -9,16 +9,16 @@ package edu.colorado.csdms.bmi;
  */
 public interface BmiGridUnstructured extends BmiGrid {
 
-  public void getGridX(int gridId, double[] gridX);
-  public void getGridY(int gridId, double[] gridY);
-  public void getGridZ(int gridId, double[] gridZ);
+  void getGridX(int gridId, double[] gridX);
+  void getGridY(int gridId, double[] gridY);
+  void getGridZ(int gridId, double[] gridZ);
 
-  public int getGridNodeCount(int gridId);
-  public int getGridEdgeCount(int gridId);
-  public int getGridFaceCount(int gridId);
+  int getGridNodeCount(int gridId);
+  int getGridEdgeCount(int gridId);
+  int getGridFaceCount(int gridId);
 
-  public void getGridEdgeNodes(int gridId, int[] edgeNodes);
-  public void getGridFaceEdges(int gridId, int[] faceEdges);
-  public void getGridFaceNodes(int gridId, int[] faceNodes);
-  public void getGridNodesPerFace(int gridId, int[] nodesPerFace);
+  void getGridEdgeNodes(int gridId, int[] edgeNodes);
+  void getGridFaceEdges(int gridId, int[] faceEdges);
+  void getGridFaceNodes(int gridId, int[] faceNodes);
+  void getGridNodesPerFace(int gridId, int[] nodesPerFace);
 }

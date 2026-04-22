@@ -8,9 +8,9 @@ package edu.colorado.csdms.bmi;
  */
 public interface BmiControl {
 
-  public void initialize(String configFile);
-  public void initialize();
-  public void update();
-  public void updateUntil(double time);
-  public void finalize();
+  void initialize(String configFile);
+  void initialize();
+  void update();
+  void updateUntil(double time);
+  void finalize();
 }

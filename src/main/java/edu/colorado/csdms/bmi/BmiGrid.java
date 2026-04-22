@@ -8,7 +8,7 @@ package edu.colorado.csdms.bmi;
  */
 public interface BmiGrid {
 
-  public int getGridRank(int gridId);
-  public int getGridSize(int gridId);
-  public String getGridType(int gridId);
+  int getGridRank(int gridId);
+  int getGridSize(int gridId);
+  String getGridType(int gridId);
 }
