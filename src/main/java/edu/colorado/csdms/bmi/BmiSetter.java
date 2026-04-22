@@ -9,6 +9,7 @@ package edu.colorado.csdms.bmi;
 public interface BmiSetter {
 
   public void setValue(String varName, double[] src);
+  void setValue(String varName, float[] src);
   public void setValue(String varName, int[] src);
   public void setValue(String varName, String[] src);
 

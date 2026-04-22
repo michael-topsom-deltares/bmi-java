@@ -9,6 +9,7 @@ package edu.colorado.csdms.bmi;
 public interface BmiGetter {
 
   public void getValue(String varName, double[] dest);
+  void getValue(String varName, float[] dest);
   public void getValue(String varName, int[] dest);
   public void getValue(String varName, String[] dest);
 
